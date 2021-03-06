@@ -30,7 +30,7 @@ Now, assuming that you have a google cloud shell running on your browser, you wo
 ```
 hypergori@cloudshell:~/btcpayserver-googlecloud$ gcloud config set project testproject
 Updated property [core/project].
-hypergori@cloudshell:~/btcpayserver-googlecloud (testproject)$ gcloud config set compute/zone asia-northeast1-b
+hypergori@cloudshell:~/btcpayserver-googlecloud (testproject)$ gcloud config set compute/zone us-central1-a
 Updated property [compute/zone].
 ```
 
@@ -38,8 +38,8 @@ Updated property [compute/zone].
 Either from your local gcloud environment or from Google console's gcloud environment, you can customize your BTCPay server install parameters by modifying in the file.THe detail is the table below.
 The default config is,  
 
-* region is asia-northeast1
-* zone is asia-northeast1-b
+* region is us-central1
+* zone is us-central1-a
 * 1 vCPU with 7.6G Memory 
 * boot disksize : 500GB
 * bitcoin testnet
@@ -56,8 +56,8 @@ Customze parameters are for experts only and change only when you know what you 
 
 | type   | parameter name | description | example value|
 | ------------- | ------------- |------------- | ------------- | 
-| Mandatory| region  | Region to deploy  | asia-northeast1|
-| Mandatory| zone | Zone to deploy | asia-northeast1-b |
+| Mandatory| region  | Region to deploy  | us-central1|
+| Mandatory| zone | Zone to deploy | us-central1-a |
 | Mandatory| vmtype | [vm type,f1-micro etc or custom-numOfCpu-memInMeg-ext](https://cloud.google.com/compute/docs/machine-types)  | custom-1-7680-ext |
 | Mandatory| diskSizeGb | root disk size in GB | 500 |
 | Mandatory| BTCPAY_HOST  | host name of the btcpay server | btcpaytest.mycompany.net|
