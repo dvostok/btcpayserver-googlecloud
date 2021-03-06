@@ -13,8 +13,8 @@ resources:
     startup-script: |
         #!/bin/bash
         ### mandatory settings ###
-        BTCPAY_HOST=btcpaytest.mycompany.net
-        NBITCOIN_NETWORK=testnet
+        BTCPAY_HOST=btcpay.dvostok.com
+        NBITCOIN_NETWORK=mainnet
         BTCPAYGEN_CRYPTO1=btc
         BTCPAYGEN_LIGHTNING=lnd
         ### optional settings (No need to set unless required) ###
